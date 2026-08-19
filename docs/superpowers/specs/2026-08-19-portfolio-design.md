@@ -36,8 +36,8 @@ y descarga de CV en PDF).
 ## Datos personales
 
 - **Nombre / título:** Gianfranco Lucarelli — Senior Full Stack Developer
-- **Foto:** proporcionada por el usuario en la conversación, se guarda
-  en `public/profile.jpg`
+- **Foto:** `public/profile.png` (copiada de
+  `C:\Users\glucarelli\Pictures\Imagenes-Pixelart\yo.png`)
 - **Email:** glucarelli9@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/gianfranco-lucarelli-2ab8ba209
 - **GitHub:** https://github.com/glucarelli9
