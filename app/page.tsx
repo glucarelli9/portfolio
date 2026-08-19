@@ -1,3 +1,19 @@
+import { Nav } from "@/components/Nav"
+import { Hero } from "@/components/Hero"
+import { About } from "@/components/About"
+import { TechStack } from "@/components/TechStack"
+import { Projects } from "@/components/Projects"
+import { Contact } from "@/components/Contact"
+
 export default function Home() {
-  return <div className="p-10">Portfolio en construcción.</div>
+  return (
+    <main className="bg-white">
+      <Nav />
+      <Hero />
+      <About />
+      <TechStack />
+      <Projects />
+      <Contact />
+    </main>
+  )
 }
