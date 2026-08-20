@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { TypewriterText } from "./TypewriterText"
 
 const CV_HREF = "/cv-gianfranco-lucarelli.pdf"
 const LINKEDIN_HREF = "https://www.linkedin.com/in/gianfranco-lucarelli-2ab8ba209"
@@ -16,14 +17,17 @@ export function Hero() {
         alt="Foto de Gianfranco Lucarelli"
         width={160}
         height={160}
-        className="rounded-full object-cover"
+        className="rounded-full object-cover ring-2 ring-term-cyan/50"
         priority
       />
       <div>
-        <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Gianfranco Lucarelli</h1>
-        <p className="mt-1 text-lg text-blue-600 dark:text-blue-400">Senior Full Stack Developer</p>
+        <p className="text-xs text-term-dim">gianfranco@portfolio:~$ whoami</p>
+        <h1 className="mt-1 text-3xl font-bold text-term-green">Gianfranco Lucarelli</h1>
+        <p className="mt-1 text-lg text-term-cyan">
+          <TypewriterText text="Senior Full Stack Developer" />
+        </p>
       </div>
-      <p className="max-w-2xl text-slate-600 dark:text-slate-300">
+      <p className="max-w-2xl text-term-dim">
         Desarrollo aplicaciones full stack en producción: integraciones enterprise
         (Microsoft Graph, Azure AD), automatización, IA aplicada y sistemas con uso
         real diario.
@@ -32,7 +36,7 @@ export function Hero() {
         <a
           href={CV_HREF}
           download
-          className="rounded-md bg-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          className="glitch-hover rounded-md border border-term-cyan px-5 py-2 text-sm font-medium text-term-cyan shadow-[0_0_10px_rgba(0,255,200,0.3)] hover:bg-term-cyan/10"
         >
           Descargar CV
         </a>
@@ -40,7 +44,7 @@ export function Hero() {
           href={LINKEDIN_HREF}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"
+          className="glitch-hover rounded-md border border-term-border px-5 py-2 text-sm font-medium text-term-dim hover:border-term-magenta hover:text-term-magenta"
         >
           LinkedIn
         </a>
@@ -48,13 +52,13 @@ export function Hero() {
           href={GITHUB_HREF}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"
+          className="glitch-hover rounded-md border border-term-border px-5 py-2 text-sm font-medium text-term-dim hover:border-term-magenta hover:text-term-magenta"
         >
           GitHub
         </a>
         <a
           href={EMAIL_HREF}
-          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"
+          className="glitch-hover rounded-md border border-term-border px-5 py-2 text-sm font-medium text-term-dim hover:border-term-magenta hover:text-term-magenta"
         >
           Email
         </a>

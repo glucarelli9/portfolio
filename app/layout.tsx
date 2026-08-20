@@ -1,5 +1,9 @@
 import type { Metadata } from "next"
+import { JetBrains_Mono } from "next/font/google"
+import { BootSequence } from "@/components/BootSequence"
 import "./globals.css"
+
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "Gianfranco Lucarelli — Senior Full Stack Developer",
@@ -10,26 +14,16 @@ export const metadata: Metadata = {
   },
 }
 
-const THEME_INIT_SCRIPT = `
-  try {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-  } catch (_) {}
-`
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
-      </head>
-      <body className="antialiased text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <html lang="es" className={jetbrainsMono.variable}>
+      <body className="bg-term-bg font-mono text-term-green antialiased">
+        <div className="scanline-overlay" aria-hidden="true" />
+        <BootSequence />
         {children}
       </body>
     </html>

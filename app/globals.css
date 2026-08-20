@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #05070a;
+}
+
+.glitch-hover {
+  position: relative;
+}
+
+.glitch-hover:hover {
+  animation: term-glitch 0.25s steps(2) infinite;
+  text-shadow: 2px 0 #ff00d4, -2px 0 #00ffc8;
+}
+
+.scanline-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  overflow: hidden;
+}
+
+.scanline-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(rgba(62, 240, 124, 0.12), transparent);
+  animation: term-scan 2.4s linear infinite;
+}

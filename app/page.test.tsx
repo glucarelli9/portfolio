@@ -13,10 +13,10 @@ describe("Home page", () => {
     const headingText = [heroHeading, ...sectionHeadings].map((h) => h.textContent)
     expect(headingText).toEqual([
       "Gianfranco Lucarelli",
-      "Sobre mí",
-      "Stack técnico",
-      "Proyectos",
-      "Contacto",
+      "# Sobre mí",
+      "# Stack técnico",
+      "# Proyectos",
+      "# Contacto",
     ])
   })
 })
