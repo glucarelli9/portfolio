@@ -38,10 +38,10 @@ export function Hero() {
           href={CV_HREF}
           download
           title="Descargar CV"
-          aria-label="Descargar CV"
-          className="glitch-hover rounded-md border border-term-cyan p-3 text-term-cyan shadow-[0_0_10px_rgba(0,255,200,0.3)] hover:bg-term-cyan/10"
+          className="glitch-hover flex items-center gap-2 rounded-md border border-term-cyan px-4 py-3 text-sm font-medium text-term-cyan shadow-[0_0_10px_rgba(0,255,200,0.3)] hover:bg-term-cyan/10"
         >
           <DownloadIcon />
+          Descargar CV
         </a>
         <a
           href={LINKEDIN_HREF}

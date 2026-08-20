@@ -32,6 +32,7 @@ export const projects: Project[] = [
       "App de ajedrez educativo con motor de reglas propio. Repo público, flujo de ramas main/dev.",
     stack: ["React", "Vite", "TypeScript", "chess.js", "Supabase"],
     gradient: ["#334155", "#0f172a"],
+    image: "/projects/chess-profe.png",
     link: { label: "Ver demo", href: "https://chess-profe.vercel.app" },
   },
   {
@@ -41,6 +42,7 @@ export const projects: Project[] = [
       "SaaS de análisis de legajos penales asistido por IA, para uso legal (CPP Jujuy/Salta).",
     stack: ["Next.js", "Groq", "Supabase"],
     gradient: ["#7c3aed", "#5b21b6"],
+    image: "/projects/indicio.png",
     link: { label: "Ver demo", href: "https://indicio-olive.vercel.app" },
   },
   {
@@ -66,6 +68,7 @@ export const projects: Project[] = [
       "Demo de plataforma de venta de vehículos usados con alertas push reales (PWA) para un cliente.",
     stack: ["Next.js", "Supabase", "Web Push"],
     gradient: ["#ea580c", "#c2410c"],
+    image: "/projects/aguero-demo.png",
     link: { label: "Ver demo", href: "https://aguero-demo.vercel.app" },
   },
   {
@@ -83,6 +86,7 @@ export const projects: Project[] = [
       "Sitio de inmobiliaria en producción para cliente real, con backend propio y panel de administración.",
     stack: ["React", "Node.js", "SQLite"],
     gradient: ["#0d9488", "#115e59"],
+    image: "/projects/sanz-berger.png",
     link: {
       label: "Ver sitio",
       href: "https://sanzbergerbienesraices.com.ar/",
