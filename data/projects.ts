@@ -4,6 +4,7 @@ export type Project = {
   description: string
   stack: string[]
   gradient: [string, string]
+  image?: string
   link?: { label: string; href: string }
 }
 

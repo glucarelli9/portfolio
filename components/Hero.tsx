@@ -20,10 +20,10 @@ export function Hero() {
         priority
       />
       <div>
-        <h1 className="text-3xl font-bold text-slate-900">Gianfranco Lucarelli</h1>
-        <p className="mt-1 text-lg text-blue-600">Senior Full Stack Developer</p>
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Gianfranco Lucarelli</h1>
+        <p className="mt-1 text-lg text-blue-600 dark:text-blue-400">Senior Full Stack Developer</p>
       </div>
-      <p className="max-w-2xl text-slate-600">
+      <p className="max-w-2xl text-slate-600 dark:text-slate-300">
         Desarrollo aplicaciones full stack en producción: integraciones enterprise
         (Microsoft Graph, Azure AD), automatización, IA aplicada y sistemas con uso
         real diario.
@@ -40,7 +40,7 @@ export function Hero() {
           href={LINKEDIN_HREF}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600"
+          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"
         >
           LinkedIn
         </a>
@@ -48,13 +48,13 @@ export function Hero() {
           href={GITHUB_HREF}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600"
+          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"
         >
           GitHub
         </a>
         <a
           href={EMAIL_HREF}
-          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600"
+          className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"
         >
           Email
         </a>
