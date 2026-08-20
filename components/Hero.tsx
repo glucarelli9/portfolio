@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { TypewriterText } from "./TypewriterText"
+import { DownloadIcon, GithubIcon, LinkedinIcon, MailIcon } from "./icons"
 
 const CV_HREF = "/cv-gianfranco-lucarelli.pdf"
 const LINKEDIN_HREF = "https://www.linkedin.com/in/gianfranco-lucarelli-2ab8ba209"
@@ -36,31 +37,39 @@ export function Hero() {
         <a
           href={CV_HREF}
           download
-          className="glitch-hover rounded-md border border-term-cyan px-5 py-2 text-sm font-medium text-term-cyan shadow-[0_0_10px_rgba(0,255,200,0.3)] hover:bg-term-cyan/10"
+          title="Descargar CV"
+          aria-label="Descargar CV"
+          className="glitch-hover rounded-md border border-term-cyan p-3 text-term-cyan shadow-[0_0_10px_rgba(0,255,200,0.3)] hover:bg-term-cyan/10"
         >
-          Descargar CV
+          <DownloadIcon />
         </a>
         <a
           href={LINKEDIN_HREF}
           target="_blank"
           rel="noreferrer"
-          className="glitch-hover rounded-md border border-term-border px-5 py-2 text-sm font-medium text-term-dim hover:border-term-magenta hover:text-term-magenta"
+          title="LinkedIn"
+          aria-label="LinkedIn"
+          className="glitch-hover rounded-md border border-term-border p-3 text-term-dim hover:border-term-magenta hover:text-term-magenta"
         >
-          LinkedIn
+          <LinkedinIcon />
         </a>
         <a
           href={GITHUB_HREF}
           target="_blank"
           rel="noreferrer"
-          className="glitch-hover rounded-md border border-term-border px-5 py-2 text-sm font-medium text-term-dim hover:border-term-magenta hover:text-term-magenta"
+          title="GitHub"
+          aria-label="GitHub"
+          className="glitch-hover rounded-md border border-term-border p-3 text-term-dim hover:border-term-magenta hover:text-term-magenta"
         >
-          GitHub
+          <GithubIcon />
         </a>
         <a
           href={EMAIL_HREF}
-          className="glitch-hover rounded-md border border-term-border px-5 py-2 text-sm font-medium text-term-dim hover:border-term-magenta hover:text-term-magenta"
+          title="Email"
+          aria-label="Email"
+          className="glitch-hover rounded-md border border-term-border p-3 text-term-dim hover:border-term-magenta hover:text-term-magenta"
         >
-          Email
+          <MailIcon />
         </a>
       </div>
     </section>
