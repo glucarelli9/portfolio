@@ -24,6 +24,7 @@ export const projects: Project[] = [
       "Marketplace argentino que conecta gente que ofrece y busca changas, con chat en tiempo real: indicador de escritura, respuesta con swipe y vista de fotos compartidas.",
     stack: ["MongoDB", "Node.js", "WebSockets"],
     gradient: ["#0891b2", "#0e7490"],
+    image: "/projects/changas-app.png",
   },
   {
     slug: "chess-profe",
@@ -85,7 +86,7 @@ export const projects: Project[] = [
     slug: "sanz-berger",
     title: "Sanz Berger Bienes Raíces",
     description:
-      "Sitio de inmobiliaria en producción para cliente real, con backend propio y panel de administración.",
+      "Sitio de inmobiliaria en producción para un cliente real: gestión de propiedades desde un panel de administración, turnos de visita agendables, formulario de contacto con backend propio y seguimiento con Google Analytics.",
     stack: ["React", "Node.js", "SQLite"],
     gradient: ["#0d9488", "#115e59"],
     image: "/projects/sanz-berger.png",
@@ -93,5 +94,15 @@ export const projects: Project[] = [
       label: "Ver sitio",
       href: "https://sanzbergerbienesraices.com.ar/",
     },
+  },
+  {
+    slug: "canto4",
+    title: "Canto 4",
+    description:
+      "Sitio oficial de la banda Canto 4: agenda de shows, historia del grupo, redes sociales y contacto directo para contrataciones y booking.",
+    stack: ["Next.js", "Tailwind CSS"],
+    gradient: ["#7a1220", "#2d0a0f"],
+    image: "/projects/canto4.png",
+    link: { label: "Ver sitio", href: "https://www.canto4.com/" },
   },
 ]

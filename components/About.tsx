@@ -8,11 +8,13 @@ export function About() {
           <span className="text-term-dim" aria-hidden="true">#</span> Sobre mí
         </h2>
         <p className="mt-4 text-term-dim">
-          Full stack developer con foco en construir software que se usa todos los
-          días en producción, no solo demos. Trabajo en todo el ciclo: desde el
-          diseño de la base de datos y la API hasta la interfaz final, pasando por
-          integraciones con sistemas enterprise (Microsoft Graph, Azure AD),
-          automatización de procesos y funcionalidades asistidas por IA.
+          Empecé del lado de IT y con el tiempo terminé programando de tiempo
+          completo. Hoy me dedico a construir sistemas que la gente usa todos
+          los días en el trabajo real, no proyectos que se quedan en una demo.
+          Toco todo el stack —base de datos, API, frontend— y en el camino me
+          tocó meterme bastante en integraciones con Microsoft Graph y Azure
+          AD, automatizar procesos que antes se hacían a mano, y sumar IA
+          donde de verdad aporta algo.
         </p>
       </Reveal>
     </section>
