@@ -13,7 +13,7 @@ export const projects: Project[] = [
     slug: "srk-rpg",
     title: "SRK RPG / Prode Picante",
     description:
-      "Plataforma de predicciones deportivas con lógica de scoring por fases y multiplicadores, en producción con uso masivo de empleados.",
+      "Plataforma de predicciones deportivas para el Mundial 2026, con cierre y scoring de cada partido 100% automático. En producción con uso masivo de empleados de SRK.",
     stack: ["Next.js", "Prisma", "NextAuth", "PostgreSQL"],
     gradient: ["#1d4ed8", "#1e3a8a"],
   },
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     slug: "changas-app",
     title: "Changas App",
     description:
-      "Marketplace de changas con chat en tiempo real: indicador de escritura, respuesta con swipe y vista de fotos.",
+      "Marketplace argentino que conecta gente que ofrece y busca changas, con chat en tiempo real: indicador de escritura, respuesta con swipe y vista de fotos compartidas.",
     stack: ["MongoDB", "Node.js", "WebSockets"],
     gradient: ["#0891b2", "#0e7490"],
   },
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     slug: "chess-profe",
     title: "Chess Profe",
     description:
-      "App de ajedrez educativo con motor de reglas propio. Repo público, flujo de ramas main/dev.",
+      "App de ajedrez educativo pensada para dar clases: el profesor crea salas de partidas en tiempo real (Supabase Realtime) para seguir los tableros de sus alumnos.",
     stack: ["React", "Vite", "TypeScript", "chess.js", "Supabase"],
     gradient: ["#334155", "#0f172a"],
     image: "/projects/chess-profe.png",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     slug: "indicio",
     title: "Indicio",
     description:
-      "SaaS de análisis de legajos penales asistido por IA, para uso legal (CPP Jujuy/Salta).",
+      "SaaS de análisis de legajos penales asistido por IA: ayuda a estudios jurídicos a procesar expedientes más rápido (CPP Jujuy/Salta).",
     stack: ["Next.js", "Groq", "Supabase"],
     gradient: ["#7c3aed", "#5b21b6"],
     image: "/projects/indicio.png",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     slug: "srk-nomina",
     title: "SRK Nómina",
     description:
-      "Sistema de gestión de nómina con roles y permisos granulares, integrado con la API de Power BI.",
+      "Sistema central de datos de RRHH de SRK: legajos completos, roles de acceso en 3 niveles (admin, lectura, lectura-escritura) y una API de solo lectura dedicada a reportes en Power BI.",
     stack: ["Node.js", "Express"],
     gradient: ["#16a34a", "#15803d"],
   },
@@ -60,12 +60,13 @@ export const projects: Project[] = [
       "Automatización que crea equipos de Microsoft Teams y carpetas de SharePoint vía Graph API, con dos apps Azure AD (cert + secret).",
     stack: ["Node.js", "Express", "Microsoft Graph API"],
     gradient: ["#2563eb", "#1e40af"],
+    image: "/projects/teams-creator.png",
   },
   {
     slug: "aguero-demo",
     title: "Agüero Automotores Demo",
     description:
-      "Demo de plataforma de venta de vehículos usados con alertas push reales (PWA) para un cliente.",
+      "Demo de plataforma de venta de autos usados para un cliente real, con alertas push reales (PWA) cuando entra un auto que matchea lo que el usuario buscaba.",
     stack: ["Next.js", "Supabase", "Web Push"],
     gradient: ["#ea580c", "#c2410c"],
     image: "/projects/aguero-demo.png",
@@ -75,9 +76,10 @@ export const projects: Project[] = [
     slug: "srk-comida",
     title: "SRK Comida",
     description:
-      "App de pedidos de almuerzo multi-sede, con manejo de feriados y resumen de pedidos al cierre. Uso operativo diario real.",
+      "App de pedidos de almuerzo para las 3 sedes de SRK: pedido grupal, countdown al cierre, contador social de quién ya pidió y carta organizada por día. Uso operativo diario real.",
     stack: ["Node.js", "PM2"],
     gradient: ["#db2777", "#9d174d"],
+    image: "/projects/srk-comida.png",
   },
   {
     slug: "sanz-berger",
